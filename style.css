@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 180px;
+    display: flex;
+    align-items: center; 
+}
+
+.lodo-of-website {
+    width: 170px;
+    height: 120px;
+    margin-left: 30px;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+}
+
+.select {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    left: 40px;
+}
+
+.selected {
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: 10px;
+}
+
+#s-select {
+    display: flex;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #faf9f9;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.options .option {
+    padding: 10px;
+    color: black;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.options .option:hover {
+    background-color: #c2c2c2;
+    color: rgb(0, 0, 255);
+}
+
+.select:hover .options {
+    display: block;
+}
+
+.buttons-in-head {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons-in-head button {
+    color: black;
+    transition: background-color 0.3s ease;
+    background-color: #e8d36d;
+    border: 2px solid transparent;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.buttons-in-head button:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #273a6b;
+}
+
+.hover-on-pics {
+    background-color: #273a6b;
+    height: 800px;
+}
+
+.area-of-images {
+    display: flex;
+}
+
+.img-container-1 {
+    cursor: pointer;
+    width: 600px;
+    height: 690px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+    background-image: url("https://irp.cdn-website.com/fc248b2a/dms3rep/multi/iStock-1157569771.jpg");
+}
+
+.img-container-1:hover {
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-blend-mode: darken; 
+}
+
+.img-container-2 {
+    cursor: pointer;
+    width: 600px;
+    height: 690px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://irp.cdn-website.com/fc248b2a/dms3rep/multi/iStock-1364971532.jpg");
+}
+
+.img-container-2:hover {
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-blend-mode: darken; 
+}
+
+.img-container-3 {
+    cursor: pointer;
+    width: 600px;
+    height: 690px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-8293778.jpeg");
+}
+
+.img-container-3:hover {
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-blend-mode: darken; 
+}
+
+.img-container-4 {
+    cursor: pointer;
+    width: 600px;
+    height: 690px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-369376.jpeg");
+}
+
+.img-container-4:hover {
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-blend-mode: darken; 
+}
+
+.takers-image h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    display: none;
+}
+
+.selection-area {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.btn {
+    font-size: 13px;
+    padding: 9px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: gold;
+    background-color: white;
+}
+
+.golden {
+    color: white;
+    font-weight: bold;
+    background-color: gold;
+}
+
+.information-about-home {
+    display: flex;
+    margin-top: 40px;
+}
+
+.heading-para {
+    width: 750px;
+    font-family: sans-serif;
+}
+
+.heading-para h1 {
+    color: #273a6b;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+}
+
+.heading-para p {
+    font-size: 13px;
+    text-align: justify;
+    margin-left: 60px;
+}
+
+.changing-images {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    width: 500px;
+    animation: imageChange 5s linear infinite;
+}
+
+@keyframes imageChange {
+    0% {
+    background-image: url("https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-369376.jpeg");
+    }
+
+    66% {
+    background-image: url("https://irp.cdn-website.com/md/pexels/dms3rep/multi/pexels-photo-8293778.jpeg");
+    }
+
+    99% {
+    background-image: url("https://irp.cdn-website.com/fc248b2a/dms3rep/multi/iStock-1364971532.jpg");
+    }
+}
+
+.contact-time {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contact-container {
+    flex: 1; 
+    padding: 20px;
+    position: relative;
+    right: 130px;
+}
+
+.contact-header {
+    margin-bottom: 20px;
+}
+
+.contact-header h2 {
+    font-size: 28px;
+    color: #273a6b;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: black;
+}
+
+.contact-form {
+    min-width: 600px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    width: 48%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid gold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+textarea {
+    resize: none;
+    min-width: 400px;
+    height: 40px;
+}
+
+.submit-btn {
+    width: 30%;
+    padding: 10px;
+    background-color: #f4c542;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #273a6b;
+}
+
+.location-share {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#map {
+    height: 560px;
+    min-width: 600px;
+}
+
+.footer {
+    background-color: #2d3e6c; 
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    margin: 5px 0;
+}
+
+.footer-left a {
+    color: #ffcc00; 
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+.social-icon img {
+    width: 30px;
+    margin-top: 10px;
+}
+
+.footer-links {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    min-width: 300px;
+}
+
+.portal h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.portal a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.portal a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-1 {
+    width: 90px;
+    border-radius: 20px;
+}
+
+.certifications {
+    margin-right: 70px;
+    display: flex;
+    gap: 200px;
+}
+
+.foot-an {
+    text-decoration: none;
+    color: #ffffff;
+}
